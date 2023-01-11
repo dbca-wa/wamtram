@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "wamtram"
+version = "0.1.0"
+description = "A minimal database connector project for WAMTRAM2"
+authors = ["Ashley Felton <ashley.felton@dbca.wa.gov.au>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.1.5"
+mssql-django = "^1.2"
+django-extensions = "^3.2.1"
+python-dotenv = "^0.21.0"
+dbca-utils = "1.1.6"
+gunicorn = "^20.1.0"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.8.0"
+ipdb = "^0.13.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
